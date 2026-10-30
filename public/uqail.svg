@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Futuristic Dark Sky -->
+    <linearGradient id="cyber-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050d1a"/>
+      <stop offset="50%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#030813"/>
+    </linearGradient>
+
+    <!-- Neon Cyan & Blue Gradients -->
+    <linearGradient id="neon-cyan-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0072ff"/>
+    </linearGradient>
+
+    <linearGradient id="neon-glow-rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0051ff" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Character Shading Gradients -->
+    <linearGradient id="skin-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d99978"/>
+      <stop offset="100%" stop-color="#ba7555"/>
+    </linearGradient>
+
+    <linearGradient id="skin-shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b06948"/>
+      <stop offset="100%" stop-color="#8a4b30"/>
+    </linearGradient>
+
+    <!-- Anime Hair Shading -->
+    <linearGradient id="hair-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2432"/>
+      <stop offset="50%" stop-color="#0f151f"/>
+      <stop offset="100%" stop-color="#080b12"/>
+    </linearGradient>
+
+    <linearGradient id="hair-highlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#385473"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1b2432"/>
+    </linearGradient>
+
+    <!-- White Polo Shirt Shading -->
+    <linearGradient id="shirt-base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f0f5fc"/>
+      <stop offset="100%" stop-color="#d6e3f3"/>
+    </linearGradient>
+
+    <linearGradient id="shirt-shadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c1d5ed"/>
+      <stop offset="100%" stop-color="#9bb7da"/>
+    </linearGradient>
+
+    <!-- Radial Cyber Halo / Aura -->
+    <radialGradient id="cyber-aura" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#0066ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow Filter for Neon Accents -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Pattern: Cyber Grid Lines -->
+    <pattern id="grid-pattern" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.09"/>
+      <circle cx="36" cy="36" r="1.2" fill="#00f0ff" fill-opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. BACKGROUND -->
+  <rect width="640" height="800" fill="url(#cyber-bg)"/>
+  <rect width="640" height="800" fill="url(#grid-pattern)"/>
+
+  <!-- Glowing Cyan Cyber Aura -->
+  <circle cx="320" cy="330" r="280" fill="url(#cyber-aura)"/>
+
+  <!-- Halo Cyber HUD Rings behind character -->
+  <g filter="url(#neon-glow)">
+    <circle cx="320" cy="320" r="235" fill="none" stroke="#00f0ff" stroke-width="2" stroke-opacity="0.35" stroke-dasharray="14 8 4 8"/>
+    <circle cx="320" cy="320" r="255" fill="none" stroke="#0072ff" stroke-width="1.2" stroke-opacity="0.25"/>
+    <circle cx="320" cy="320" r="190" fill="none" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.4"/>
+    <!-- Orbiting Tech Nodes -->
+    <circle cx="490" cy="180" r="4" fill="#00f0ff"/>
+    <circle cx="150" cy="460" r="4" fill="#00f0ff"/>
+    <circle cx="530" cy="420" r="3" fill="#0072ff"/>
+  </g>
+
+  <!-- Cyber Tech HUD Text & Coordinates -->
+  <text x="45" y="65" fill="#00f0ff" font-family="'DM Mono', monospace" font-size="10" letter-spacing="3" opacity="0.8">SYS_ID // UQAIL.SHAKIR</text>
+  <text x="45" y="80" fill="#0072ff" font-family="'DM Mono', monospace" font-size="8" letter-spacing="2" opacity="0.6">CLASS: CYBER_SECURITY [DEAKIN]</text>
+  <text x="595" y="65" text-anchor="end" fill="#00f0ff" font-family="'DM Mono', monospace" font-size="9" letter-spacing="2" opacity="0.8">DECK: 01_VERIFIED</text>
+
+  <!-- Corner Brackets -->
+  <path d="M 30 60 L 30 30 L 60 30" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
+  <path d="M 610 60 L 610 30 L 580 30" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
+  <path d="M 30 740 L 30 770 L 60 770" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
+  <path d="M 610 740 L 610 770 L 580 770" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
+
+  <!-- 2. CHARACTER: TORSO & POLO SHIRT (Uqail's white Lacoste polo) -->
+  <g id="body-polo">
+    <!-- Base Body Silhouette -->
+    <path d="M 60 800 C 65 640 120 540 230 495 L 320 520 L 410 495 C 520 540 575 640 580 800 Z" fill="url(#shirt-shadow)"/>
+    <!-- Main Shirt Body Front -->
+    <path d="M 115 800 C 120 660 170 565 240 515 L 320 535 L 400 515 C 470 565 520 660 525 800 Z" fill="url(#shirt-base)"/>
+    
+    <!-- Left Sleeve -->
+    <path d="M 60 800 C 62 710 85 620 135 550 L 210 595 C 165 670 145 745 140 800 Z" fill="#ebf3fd"/>
+    <!-- Left Sleeve Trim / Ribbed Cuff -->
+    <path d="M 75 750 L 142 752 L 140 766 L 73 764 Z" fill="#d9e6f5"/>
+
+    <!-- Right Arm / Forearm & Smartwatch -->
+    <path d="M 580 800 C 578 710 555 620 505 550 L 430 595 C 475 670 495 745 500 800 Z" fill="#ebf3fd"/>
+    <!-- Right Arm Exposed Skin (from short sleeve) -->
+    <path d="M 470 700 C 510 760 525 800 535 800 L 440 800 C 430 780 445 740 470 700 Z" fill="url(#skin-base)"/>
+    <!-- Smartwatch on Wrist (Black band with glowing neon-cyan screen) -->
+    <rect x="470" y="745" width="28" height="42" rx="6" fill="#111822" stroke="#25384e" stroke-width="1.5" transform="rotate(-15 484 766)"/>
+    <rect x="475" y="753" width="18" height="26" rx="3" fill="#00f0ff" opacity="0.85" filter="url(#neon-glow)" transform="rotate(-15 484 766)"/>
+
+    <!-- Polo Placket & Collar Structure -->
+    <!-- Placket (center button strip) -->
+    <path d="M 298 525 L 342 525 L 338 665 L 302 665 Z" fill="#e2edf8" stroke="#cbdcf0" stroke-width="1"/>
+    <!-- Polo Buttons -->
+    <circle cx="320" cy="565" r="4.5" fill="#f8fafc" stroke="#b0c8e2" stroke-width="1.2"/>
+    <circle cx="320" cy="605" r="4.5" fill="#f8fafc" stroke="#b0c8e2" stroke-width="1.2"/>
+    <circle cx="320" cy="645" r="4.5" fill="#f8fafc" stroke="#b0c8e2" stroke-width="1.2"/>
+
+    <!-- Left Collar Wing (Anime crisp folds) -->
+    <path d="M 245 485 L 310 545 L 285 570 L 220 505 Z" fill="#ffffff" stroke="#c2d5eb" stroke-width="1.5"/>
+    <!-- Right Collar Wing -->
+    <path d="M 395 485 L 330 545 L 355 570 L 420 505 Z" fill="#ffffff" stroke="#c2d5eb" stroke-width="1.5"/>
+
+    <!-- Subtle Lacoste Crocodile Crest Badge on Chest (stylized cyber gaming crest) -->
+    <g transform="translate(415, 600) scale(0.9)">
+      <path d="M 0 6 C 5 0 15 0 20 4 C 23 6 26 5 28 8 C 24 10 20 8 16 12 C 10 14 3 13 0 6 Z" fill="#2d7a58"/>
+      <circle cx="23" cy="6" r="1" fill="#ffffff"/>
+      <path d="M 4 8 L 8 10 M 11 8 L 14 10" stroke="#1d553d" stroke-width="1"/>
+    </g>
+
+    <!-- Neon Rim Lighting on Shoulders (Valorant / Anime style edge glow) -->
+    <path d="M 60 800 C 65 640 120 540 230 495" fill="none" stroke="#00f0ff" stroke-width="3" opacity="0.6" filter="url(#neon-glow)"/>
+    <path d="M 580 800 C 575 640 520 540 410 495" fill="none" stroke="#0072ff" stroke-width="3" opacity="0.6" filter="url(#neon-glow)"/>
+  </g>
+
+  <!-- 3. NECK & HEAD -->
+  <g id="head-group">
+    <!-- Neck -->
+    <path d="M 265 420 L 375 420 L 385 525 C 385 550 355 565 320 565 C 285 565 255 550 255 525 Z" fill="url(#skin-base)"/>
+    <!-- Deep Neck Shadow from Chin -->
+    <path d="M 265 435 C 295 480 345 480 375 435 L 378 480 C 350 515 290 515 262 480 Z" fill="url(#skin-shadow)"/>
+
+    <!-- Head / Face Oval Structure -->
+    <!-- Crisp jawline with anime taper -->
+    <path d="M 205 310 C 200 395 240 465 320 465 C 400 465 440 395 435 310 C 435 220 400 170 320 170 C 240 170 205 220 205 310 Z" fill="url(#skin-base)"/>
+
+    <!-- Left & Right Ears -->
+    <path d="M 203 300 C 188 300 182 328 190 355 C 196 372 208 376 212 360 Z" fill="url(#skin-base)"/>
+    <path d="M 198 318 C 194 322 195 342 202 346" stroke="#945337" stroke-width="2" fill="none"/>
+
+    <path d="M 437 300 C 452 300 458 328 450 355 C 444 372 432 376 428 360 Z" fill="url(#skin-base)"/>
+    <path d="M 442 318 C 446 322 445 342 438 346" stroke="#945337" stroke-width="2" fill="none"/>
+
+    <!-- Anime Facial Shading (Cheekbones, nose shadow) -->
+    <path d="M 320 310 L 314 365 C 314 372 322 374 326 370" fill="none" stroke="#945337" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 312 368 C 318 376 328 376 332 368" fill="#7a3f28" opacity="0.6"/>
+
+    <!-- Groomed Beard and Goatee (From reference photo) -->
+    <!-- Chin Beard & Soul Patch -->
+    <path d="M 285 415 C 298 448 342 448 355 415 C 342 435 298 435 285 415 Z" fill="#151b24"/>
+    <path d="M 312 404 C 316 414 324 414 328 404 Z" fill="#151b24"/>
+    <!-- Jawline Stubble Outline -->
+    <path d="M 220 365 C 235 440 280 460 320 462 C 360 460 405 440 420 365 C 412 425 365 454 320 455 C 275 454 228 425 220 365 Z" fill="#151b24" opacity="0.8"/>
+    <!-- Neatly Trimmed Mustache -->
+    <path d="M 288 392 C 304 384 316 388 320 395 C 324 388 336 384 352 392 C 340 400 324 398 320 404 C 316 398 300 400 288 392 Z" fill="#151b24"/>
+
+    <!-- Confident Mouth / Smile -->
+    <path d="M 296 408 C 312 418 328 418 344 408" fill="none" stroke="#683422" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Eyes (Anime Expressive & Sharp with Cyan Cyber Iris Ring) -->
+    <!-- Left Eye -->
+    <g id="left-eye">
+      <ellipse cx="272" cy="326" rx="19" ry="11" fill="#ffffff"/>
+      <!-- Iris with Cyber Glow -->
+      <circle cx="273" cy="326" r="9" fill="#141c28"/>
+      <circle cx="273" cy="326" r="7" fill="#0c3c66"/>
+      <circle cx="274" cy="325" r="4.5" fill="#00f0ff" filter="url(#neon-glow)"/>
+      <circle cx="275" cy="324" r="2.2" fill="#ffffff"/>
+      <circle cx="271" cy="328" r="1.2" fill="#ffffff"/>
+      <!-- Eyelash / Upper Lid -->
+      <path d="M 250 324 C 260 315 284 315 294 324" fill="none" stroke="#121822" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Eye -->
+    <g id="right-eye">
+      <ellipse cx="368" cy="326" rx="19" ry="11" fill="#ffffff"/>
+      <!-- Iris with Cyber Glow -->
+      <circle cx="367" cy="326" r="9" fill="#141c28"/>
+      <circle cx="367" cy="326" r="7" fill="#0c3c66"/>
+      <circle cx="366" cy="325" r="4.5" fill="#00f0ff" filter="url(#neon-glow)"/>
+      <circle cx="368" cy="324" r="2.2" fill="#ffffff"/>
+      <circle cx="364" cy="328" r="1.2" fill="#ffffff"/>
+      <!-- Eyelash / Upper Lid -->
+      <path d="M 346 324 C 356 315 380 315 390 324" fill="none" stroke="#121822" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Stylish Eyebrows (Thick, confident, well-groomed) -->
+    <path d="M 246 295 C 265 284 288 286 300 294" stroke="#121822" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M 340 294 C 352 286 375 284 394 295" stroke="#121822" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+    <!-- 4. UQAIL'S SIGNATURE GLASSES (Thin dark frames with clean anime reflection) -->
+    <g id="glasses">
+      <!-- Left Frame -->
+      <rect x="236" y="306" width="72" height="42" rx="10" fill="none" stroke="#101721" stroke-width="3.5"/>
+      <rect x="238" y="308" width="68" height="38" rx="8" fill="none" stroke="#00f0ff" stroke-width="0.8" opacity="0.6"/>
+      <!-- Left Glass Sheen / Highlight -->
+      <path d="M 246 338 L 272 312" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <path d="M 252 342 L 264 330" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+      <!-- Right Frame -->
+      <rect x="332" y="306" width="72" height="42" rx="10" fill="none" stroke="#101721" stroke-width="3.5"/>
+      <rect x="334" y="308" width="68" height="38" rx="8" fill="none" stroke="#00f0ff" stroke-width="0.8" opacity="0.6"/>
+      <!-- Right Glass Sheen / Highlight -->
+      <path d="M 342 338 L 368 312" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <path d="M 348 342 L 360 330" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+      <!-- Bridge between frames -->
+      <path d="M 308 318 C 316 314 324 314 332 318" fill="none" stroke="#101721" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Frame temples extending to ears -->
+      <line x1="236" y1="316" x2="204" y2="314" stroke="#101721" stroke-width="3" stroke-linecap="round"/>
+      <line x1="404" y1="316" x2="436" y2="314" stroke="#101721" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- 5. ANIME HAIR (Layered, textured wavy hair matching Uqail's actual hairstyle) -->
+    <g id="anime-hair">
+      <!-- Main Hair Mass Silhouette -->
+      <path d="M 195 310 C 180 230 205 145 285 125 C 330 115 385 125 425 160 C 455 190 455 245 448 315 C 430 270 410 240 375 235 C 320 230 260 255 230 285 C 215 300 205 310 195 310 Z" fill="url(#hair-base)"/>
+      
+      <!-- Top Volume & Wavy Anime Locks -->
+      <!-- Left Swoop -->
+      <path d="M 215 260 C 210 180 260 135 320 135 C 350 135 385 150 405 175 C 365 165 315 175 275 205 C 245 230 225 255 215 260 Z" fill="#222e40"/>
+      <!-- Center Forehead Lock (Swept to side as in photo) -->
+      <path d="M 265 195 C 290 170 330 175 350 200 C 330 215 305 220 280 218 C 265 215 260 205 265 195 Z" fill="#182333"/>
+      <!-- Right Fringe Waves -->
+      <path d="M 335 155 C 385 150 435 185 440 245 C 425 215 395 195 365 190 C 345 185 335 165 335 155 Z" fill="#222e40"/>
+      
+      <!-- Electric Cyan Hair Edge Rim Highlights -->
+      <path d="M 205 270 C 190 205 225 145 285 128 C 345 118 410 140 440 195" fill="none" stroke="#00f0ff" stroke-width="3" opacity="0.75" filter="url(#neon-glow)"/>
+      <!-- Soft blue hair luster -->
+      <path d="M 270 148 C 310 135 360 140 395 160" fill="none" stroke="#4da8ff" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- Side Cyber Rim Lights on Face/Jawline -->
+    <path d="M 204 310 C 200 375 230 430 280 458" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.5" filter="url(#neon-glow)"/>
+    <path d="M 436 310 C 440 375 410 430 360 458" fill="none" stroke="#0072ff" stroke-width="2" opacity="0.5" filter="url(#neon-glow)"/>
+  </g>
+
+  <!-- 6. FOREGROUND CYBER HUD OVERLAYS & PARTICLES -->
+  <g id="cyber-overlays" filter="url(#neon-glow)">
+    <!-- Tech Holographic UI Bracket at Bottom -->
+    <path d="M 160 760 L 220 760 L 235 775 L 405 775 L 420 760 L 480 760" fill="none" stroke="#00f0ff" stroke-width="1.8" opacity="0.8"/>
+    <circle cx="235" cy="775" r="3" fill="#00f0ff"/>
+    <circle cx="405" cy="775" r="3" fill="#00f0ff"/>
+    <text x="320" y="770" text-anchor="middle" fill="#00f0ff" font-family="'DM Mono', monospace" font-size="8" letter-spacing="3" opacity="0.9">UQAIL // ONLINE</text>
+
+    <!-- Floating Hex / Tech Sparkles -->
+    <polygon points="120,380 125,372 135,372 140,380 135,388 125,388" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+    <polygon points="510,280 514,274 522,274 526,280 522,286 514,286" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+    <circle cx="170" cy="220" r="2" fill="#00f0ff" opacity="0.7"/>
+    <circle cx="480" cy="490" r="2" fill="#0072ff" opacity="0.8"/>
+    <circle cx="530" cy="620" r="2.5" fill="#00f0ff" opacity="0.6"/>
+  </g>
+</svg>
+

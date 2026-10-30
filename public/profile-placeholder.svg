@@ -1,23 +1,154 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" fill="none">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="760" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#DCE8D7"/>
-      <stop offset="1" stop-color="#B7C8B5"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="640" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050d1a"/>
+      <stop offset="0.45" stop-color="#0a192f"/>
+      <stop offset="1" stop-color="#020710"/>
     </linearGradient>
-    <linearGradient id="shirt" x1="196" y1="531" x2="438" y2="750" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#28463C"/>
-      <stop offset="1" stop-color="#102B25"/>
+
+    <!-- Neon Glow Gradient -->
+    <radialGradient id="neon-glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#0066ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyber Shield Hex Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.08"/>
+      <circle cx="40" cy="40" r="1.5" fill="#00f0ff" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Suit & Clothing Gradients -->
+    <linearGradient id="suit-body" x1="180" y1="520" x2="460" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1728"/>
+      <stop offset="1" stop-color="#040913"/>
+    </linearGradient>
+
+    <linearGradient id="lapel-grad" x1="260" y1="540" x2="380" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#122540"/>
+      <stop offset="1" stop-color="#070e1c"/>
+    </linearGradient>
+
+    <linearGradient id="cyber-tie" x1="310" y1="550" x2="330" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f0ff"/>
+      <stop offset="0.7" stop-color="#0072ff"/>
+      <stop offset="1" stop-color="#0038a8"/>
+    </linearGradient>
+
+    <linearGradient id="neon-line-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0072ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="skin-tone" x1="260" y1="220" x2="380" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d49a7a"/>
+      <stop offset="1" stop-color="#b67a5b"/>
+    </linearGradient>
+
+    <linearGradient id="hair-grad" x1="200" y1="120" x2="440" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a2332"/>
+      <stop offset="0.6" stop-color="#0d141e"/>
+      <stop offset="1" stop-color="#05080d"/>
     </linearGradient>
   </defs>
-  <path fill="url(#bg)" d="M0 0h640v760H0z"/>
-  <circle cx="520" cy="122" r="120" fill="#F0F2E7" fill-opacity=".3"/>
-  <path d="M111 760c20-135 94-218 210-218s190 83 208 218H111Z" fill="url(#shirt)"/>
-  <path d="M248 486h146v109c-14 30-44 51-73 51s-59-21-73-51V486Z" fill="#B97E61"/>
-  <ellipse cx="320" cy="339" rx="139" ry="165" fill="#C88F70"/>
-  <path d="M184 341c-21-142 40-236 148-236 91 0 149 63 145 170-37-4-72-25-100-56-48 43-105 62-187 62l-6 60Z" fill="#202926"/>
-  <path d="M181 315c-21 9-29 40-16 66 8 16 21 24 36 25l-5-80-15-11Zm279 0c21 9 29 40 16 66-8 16-21 24-36 25l5-80 15-11Z" fill="#BD8569"/>
-  <path d="M275 350c9-7 20-8 31-4m29 0c11-4 22-3 31 4" stroke="#382C29" stroke-width="7" stroke-linecap="round"/>
-  <path d="M320 364v39" stroke="#A96F58" stroke-width="6" stroke-linecap="round"/>
-  <path d="M296 426c15 12 33 12 48 0" stroke="#805143" stroke-width="6" stroke-linecap="round"/>
-  <path d="M200 284c54 0 106-19 155-59 34 31 71 52 113 58" stroke="#202926" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- Background -->
+  <rect width="640" height="760" fill="url(#bg-grad)"/>
+  <rect width="640" height="760" fill="url(#cyber-grid)"/>
+
+  <!-- Gaming Cyber Rings / Neon Halo -->
+  <circle cx="320" cy="310" r="230" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="12 8 4 8"/>
+  <circle cx="320" cy="310" r="248" fill="none" stroke="#0072ff" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="320" cy="310" r="185" fill="none" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.35"/>
+  <circle cx="320" cy="310" r="170" fill="url(#neon-glow)"/>
+
+  <!-- Corner Gaming HUD Accents -->
+  <path d="M 50 80 L 80 50 L 160 50" fill="none" stroke="#00f0ff" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="50" cy="80" r="3" fill="#00f0ff"/>
+  <text x="90" y="42" fill="#00f0ff" font-family="'DM Mono', monospace" font-size="10" letter-spacing="2" opacity="0.7">SECURITY_NODE // UQAIL</text>
+
+  <path d="M 590 80 L 560 50 L 480 50" fill="none" stroke="#0072ff" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="590" cy="80" r="3" fill="#0072ff"/>
+  <text x="495" y="42" fill="#00d4ff" font-family="'DM Mono', monospace" font-size="10" letter-spacing="2" opacity="0.7">DEAKIN.CS.SYS</text>
+
+  <!-- Shoulders & Professional Blazer Suit -->
+  <path d="M 90 760 C 110 595 195 505 320 505 C 445 505 530 595 550 760 Z" fill="url(#suit-body)"/>
+  
+  <!-- Cyber Suit Neon Edge Highlights -->
+  <path d="M 120 760 C 145 615 210 535 305 510" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.4"/>
+  <path d="M 520 760 C 495 615 430 535 335 510" fill="none" stroke="#0072ff" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Crisp Formal Shirt -->
+  <path d="M 270 480 L 370 480 L 350 630 L 320 660 L 290 630 Z" fill="#e2edf8"/>
+  <path d="M 320 520 L 320 655" stroke="#9bb3cf" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Neon Gaming Blue Tie -->
+  <path d="M 306 488 L 334 488 L 328 530 L 335 680 L 320 710 L 305 680 L 312 530 Z" fill="url(#cyber-tie)"/>
+  <!-- Neon glow stripe down tie -->
+  <line x1="320" y1="495" x2="320" y2="700" stroke="#affbff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Blazer Lapels -->
+  <path d="M 235 520 L 298 670 L 320 760 L 255 760 L 165 640 Z" fill="url(#lapel-grad)"/>
+  <path d="M 405 520 L 342 670 L 320 760 L 385 760 L 475 640 Z" fill="url(#lapel-grad)"/>
+
+  <!-- Lapel Accent Pin (Cyber Security Shield Symbol) -->
+  <polygon points="255,595 267,590 267,605 255,612 243,605 243,590" fill="#00f0ff" opacity="0.9"/>
+  <circle cx="255" cy="601" r="2" fill="#ffffff"/>
+
+  <!-- Neck -->
+  <path d="M 268 410 L 372 410 L 372 505 C 372 528 350 545 320 545 C 290 545 268 528 268 505 Z" fill="#b97c5e"/>
+  <!-- Neck Shadow -->
+  <path d="M 270 435 C 300 460 340 460 370 435 L 370 475 C 345 500 295 500 270 475 Z" fill="#9e6347" opacity="0.5"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="320" cy="335" rx="122" ry="148" fill="url(#skin-tone)"/>
+
+  <!-- Ears -->
+  <path d="M 198 320 C 185 320 180 345 188 368 C 194 382 205 388 208 375 Z" fill="#b97c5e"/>
+  <path d="M 442 320 C 455 320 460 345 452 368 C 446 382 435 388 432 375 Z" fill="#b97c5e"/>
+
+  <!-- Sleek Modern Haircut -->
+  <path d="M 198 320 C 185 240 215 160 300 148 C 370 138 435 180 442 270 C 445 310 440 335 435 345 C 410 270 365 245 295 250 C 240 254 210 285 198 320 Z" fill="url(#hair-grad)"/>
+  <!-- Top textured hair flow -->
+  <path d="M 230 185 C 275 140 350 142 410 178 C 380 160 325 158 275 178 Z" fill="#2d3d52" opacity="0.6"/>
+
+  <!-- Eyebrows (Sharply styled) -->
+  <path d="M 248 300 C 265 292 288 294 300 302" stroke="#161f2b" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M 340 302 C 352 294 375 292 392 300" stroke="#161f2b" stroke-width="6.5" stroke-linecap="round"/>
+
+  <!-- Eyes with subtle cyber-blue iris reflection -->
+  <!-- Left Eye -->
+  <ellipse cx="274" cy="328" rx="17" ry="10" fill="#ffffff"/>
+  <circle cx="275" cy="328" r="8" fill="#1b2838"/>
+  <circle cx="276" cy="328" r="4.5" fill="#00d4ff"/>
+  <circle cx="274" cy="326" r="2" fill="#ffffff"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="366" cy="328" rx="17" ry="10" fill="#ffffff"/>
+  <circle cx="365" cy="328" r="8" fill="#1b2838"/>
+  <circle cx="364" cy="328" r="4.5" fill="#00d4ff"/>
+  <circle cx="366" cy="326" r="2" fill="#ffffff"/>
+
+  <!-- Nose -->
+  <path d="M 320 318 L 316 364 C 316 370 324 372 328 368" stroke="#965f46" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Confident Smile -->
+  <path d="M 292 400 C 310 416 330 416 348 400" stroke="#844e39" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Subtle Cyber Tech Glasses / HUD Visor Accent (Removable / Elegant) -->
+  <rect x="238" y="312" width="68" height="32" rx="6" fill="none" stroke="#00f0ff" stroke-width="1.8" stroke-opacity="0.75"/>
+  <rect x="334" y="312" width="68" height="32" rx="6" fill="none" stroke="#00f0ff" stroke-width="1.8" stroke-opacity="0.75"/>
+  <line x1="306" y1="322" x2="334" y2="322" stroke="#00f0ff" stroke-width="1.8" stroke-opacity="0.75"/>
+  <line x1="225" y1="320" x2="238" y2="320" stroke="#00f0ff" stroke-width="1.8" stroke-opacity="0.5"/>
+  <line x1="402" y1="320" x2="415" y2="320" stroke="#00f0ff" stroke-width="1.8" stroke-opacity="0.5"/>
+  <!-- Glasses lens sheen -->
+  <path d="M 245 338 L 265 316" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 341 338 L 361 316" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Neon Horizontal Scanning Grid Accent -->
+  <line x1="120" y1="640" x2="520" y2="640" stroke="url(#neon-line-grad)" stroke-width="1.5"/>
+  <line x1="180" y1="670" x2="460" y2="670" stroke="url(#neon-line-grad)" stroke-width="1"/>
 </svg>

@@ -1,27 +1,27 @@
 export const profile = {
-  name: 'Aarav Mehta',
-  role: 'Cybersecurity undergraduate',
+  name: 'Uqail Shakir',
+  role: 'Cybersecurity Undergraduate',
   email: 'hello@example.com',
-  location: 'Based wherever curiosity takes me',
+  location: 'Sri Lanka / Australia',
   github: 'https://github.com/yourusername',
   linkedin: 'https://linkedin.com/in/yourusername',
 }
 
 export const skills = [
   {
-    category: 'Security',
+    category: 'Security & Systems',
     number: '01',
     items: ['Network fundamentals', 'Security principles', 'Threat awareness', 'Linux basics'],
   },
   {
-    category: 'Building',
+    category: 'Building & Web',
     number: '02',
     items: ['HTML & CSS', 'JavaScript', 'React', 'Responsive design'],
   },
   {
-    category: 'Tools & workflow',
+    category: 'Tools & Workflow',
     number: '03',
-    items: ['Git & GitHub', 'Command line', 'VS Code', 'Figma'],
+    items: ['Git & GitHub', 'Command line', 'VS Code', 'Information Systems'],
   },
 ]
 
@@ -52,17 +52,19 @@ export const projects = [
 
 export const education = [
   {
-    period: 'In progress',
-    title: 'Cybersecurity studies',
-    detail: 'Undergraduate program · Your institution',
-    description: 'Add your course focus, expected graduation date, or relevant learning here.',
+    period: 'Undergraduate',
+    title: 'Bachelor of Cyber Security',
+    detail: 'Deakin University · Australia',
+    description:
+      'Awarded a prestigious scholarship by the Sri Lankan Ministry of Higher Education to pursue a Bachelor of Cyber Security at Deakin University.',
     current: true,
   },
   {
-    period: 'Previous studies',
-    title: 'Technology background',
-    detail: 'Former technology student · Your institution',
-    description: 'Replace this with the details of your previous studies or training.',
+    period: 'G.C.E. Advanced Level',
+    title: 'Engineering Technology Stream',
+    detail: 'Sri Lanka · Island Rank 53 | District Rank 02',
+    description:
+      'Achieved 3As in Engineering Technology (ET), Information & Communication Technology (ICT), and Science for Technology (SFT) with a top Z-Score of 2.7900.',
     current: false,
   },
 ]

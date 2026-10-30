@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+﻿import { useEffect, useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import {
   ArrowDown,
@@ -94,7 +94,7 @@ function Header({
     <header className="site-header">
       <a className="wordmark" href="#home" aria-label={`${profile.name}, home`}>
         <span className="wordmark__mark"><Command size={17} strokeWidth={2.2} /></span>
-        <span>aarav<span className="wordmark__period">.</span></span>
+        <span>uqail<span className="wordmark__period">.</span></span>
       </a>
 
       <nav id="mobile-navigation" className={`site-nav${menuOpen ? ' site-nav--open' : ''}`} aria-label="Main navigation">
@@ -172,10 +172,10 @@ function Hero() {
 
       <Reveal className="hero-art" delay={0.12}>
         <div className="hero-art__frame">
-          <img src="/profile-placeholder.svg" alt="Illustrated placeholder profile portrait" />
+          <img src="/profile-placeholder.svg" alt="Uqail Shakir portrait" />
           <div className="hero-art__corner hero-art__corner--tl" />
           <div className="hero-art__corner hero-art__corner--br" />
-          <div className="portrait-label"><span>PROFILE / 001</span><span>REPLACE IMAGE ↗</span></div>
+          <div className="portrait-label"><span>PROFILE / 001</span><span>CYBERSEC // DEV</span></div>
           <div className="hero-note">
             <span className="hero-note__icon"><Shield size={17} /></span>
             <span><strong>Learn. Build. Secure.</strong><small>A work in progress, by design.</small></span>
@@ -387,7 +387,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="site-footer page-shell">
-      <a className="wordmark" href="#home"><span className="wordmark__mark"><Command size={16} /></span><span>aarav<span className="wordmark__period">.</span></span></a>
+      <a className="wordmark" href="#home"><span className="wordmark__mark"><Command size={16} /></span><span>uqail<span className="wordmark__period">.</span></span></a>
       <span className="footer-note">Made with curiosity, and a little care.</span>
       <nav aria-label="Footer navigation">{navItems.slice(0, 4).map(([label, href]) => <a key={href} href={href}>{label}</a>)}</nav>
       <span className="footer-copyright">© {new Date().getFullYear()} {profile.name}. All good things reserved.</span>

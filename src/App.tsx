@@ -172,7 +172,7 @@ function Hero() {
 
       <Reveal className="hero-art" delay={0.12}>
         <div className="hero-art__frame">
-          <img src="/uqail.svg" alt="Uqail Shakir portrait" />
+          <img src="/uqail-portrait.png" alt="Uqail Shakir portrait" />
           <div className="hero-art__corner hero-art__corner--tl" />
           <div className="hero-art__corner hero-art__corner--br" />
           <div className="portrait-label"><span>PROFILE / 001</span><span>CYBERSEC // DEV</span></div>
